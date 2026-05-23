@@ -71,10 +71,7 @@ const Login = () => {
                 
                 <div className="relative z-10">
                     <Link to="/" className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-white text-blue-900 rounded-xl flex items-center justify-center font-black text-xl shadow-xl">
-                            JP
-                        </div>
-                        <span className="text-3xl font-black tracking-tight">JobPortal</span>
+                        <img src="/job-logo.png" alt="JobPortal Logo" className="h-20 sm:h-24 w-auto object-contain drop-shadow-xl" />
                     </Link>
                 </div>
 
@@ -115,9 +112,7 @@ const Login = () => {
                     className="max-w-md w-full relative z-10"
                 >
                     <div className="lg:hidden flex justify-center mb-8">
-                        <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-2xl flex items-center justify-center font-black text-2xl shadow-xl">
-                            JP
-                        </div>
+                        <img src="/job-logo.png" alt="JobPortal Logo" className="h-20 sm:h-24 w-auto object-contain drop-shadow-xl" />
                     </div>
 
                     <div className="text-center lg:text-left mb-10">

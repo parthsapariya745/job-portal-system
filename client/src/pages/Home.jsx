@@ -361,10 +361,7 @@ const Home = () => {
       {/* Footer */}
       <footer className="bg-white dark:bg-slate-950 text-slate-500 dark:text-slate-400 py-20 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="w-20 h-20 bg-blue-600 text-white rounded-3xl flex items-center justify-center font-black text-3xl mx-auto mb-8 shadow-2xl shadow-blue-500/20">
-             JP
-          </div>
-          <h2 className="text-3xl font-black mb-4 text-slate-900 dark:text-white tracking-tighter transition-colors">JobPortal</h2>
+          <img src="/job-logo.png" alt="JobPortal Logo" className="h-24 sm:h-32 w-auto object-contain mx-auto mb-8" />
           <p className="text-lg font-medium mb-10 max-w-md mx-auto leading-relaxed transition-colors">
             Connecting talented individuals with world-class opportunities across India.
           </p>

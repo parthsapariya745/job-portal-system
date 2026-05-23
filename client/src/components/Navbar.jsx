@@ -141,15 +141,7 @@ const Navbar = () => {
             </button>
 
             <Link to="/" className="flex-shrink-0 flex items-center min-w-0">
-              <div className="flex items-center group">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center mr-2 sm:mr-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white font-black text-sm sm:text-base">JP</span>
-                </div>
-                <span className="text-lg sm:text-2xl font-black tracking-tight text-gray-900 dark:text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 transition-all duration-300">
-                  <span className="hidden xs:inline">JobPortal</span>
-                  <span className="xs:hidden">JP</span>
-                </span>
-              </div>
+                <img src="/job-logo.png" alt="JobPortal Logo" className="h-12 sm:h-16 w-auto object-contain mr-2 sm:mr-3 group-hover:scale-110 transition-transform duration-300" />
             </Link>
 
             {/* Desktop Navigation */}
