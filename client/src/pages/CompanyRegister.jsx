@@ -58,109 +58,110 @@ const CompanyRegister = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4">
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-slate-950 py-12 px-4 transition-colors duration-300">
             <div className="max-w-md w-full space-y-8">
                 <div className="text-center">
-                    <div className="mx-auto h-12 w-12 flex items-center justify-center rounded-full bg-green-100">
-                        <FaBriefcase className="h-6 w-6 text-green-600" />
+                    <div className="mx-auto h-12 w-12 flex items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
+                        <FaBriefcase className="h-6 w-6 text-green-600 dark:text-green-400" />
                     </div>
-                    <h2 className="mt-6 text-3xl font-extrabold text-gray-900">Hire Top Talent</h2>
-                    <p className="mt-2 text-sm text-gray-600">Create your company account</p>
+                    <h2 className="mt-6 text-3xl font-extrabold text-gray-900 dark:text-white">Hire Top Talent</h2>
+                    <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">Create your company account</p>
                 </div>
                 
-                <div className="bg-white py-8 px-6 shadow-lg rounded-lg">
+                <div className="bg-white dark:bg-slate-900 py-8 px-6 shadow-lg rounded-[24px] border border-gray-100 dark:border-slate-800 transition-colors">
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Your Full Name</label>
+                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 ml-1">Your Full Name</label>
                             <input 
                                 name="name" 
                                 type="text" 
                                 required 
                                 value={formData.name} 
                                 onChange={onChange} 
-                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500" 
+                                className="w-full px-4 py-3.5 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-gray-900 dark:text-white font-medium placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 focus:border-green-500 focus:bg-white dark:focus:bg-slate-900 transition-all shadow-sm" 
                                 placeholder="Enter your full name"
                             />
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Your Role</label>
+                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 ml-1">Your Role</label>
                             <select
                                 name="recruiterRole"
                                 value={formData.recruiterRole}
                                 onChange={onChange}
-                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                                className="w-full px-4 py-3.5 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-gray-900 dark:text-white font-medium focus:outline-none focus:ring-2 focus:ring-green-500/20 focus:border-green-500 focus:bg-white dark:focus:bg-slate-900 transition-all shadow-sm"
                             >
-                                <option value="Company">Company Admin (Owner/Director)</option>
-                                <option value="Company HR">Company HR (Manager/Recruiter)</option>
+                                <option className="dark:bg-slate-900" value="Company">Company Admin (Owner/Director)</option>
+                                <option className="dark:bg-slate-900" value="Company HR">Company HR (Manager/Recruiter)</option>
                             </select>
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Work Email</label>
+                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 ml-1">Work Email</label>
                             <input 
                                 name="email" 
                                 type="email" 
                                 required 
                                 value={formData.email} 
                                 onChange={onChange} 
-                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500" 
+                                className="w-full px-4 py-3.5 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-gray-900 dark:text-white font-medium placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 focus:border-green-500 focus:bg-white dark:focus:bg-slate-900 transition-all shadow-sm" 
                                 placeholder="Enter your work email"
                             />
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Password</label>
-                            <div className="mt-1 relative">
+                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 ml-1">Password</label>
+                            <div className="relative">
                                 <input 
                                     name="password" 
                                     type={showPassword ? 'text' : 'password'} 
                                     required 
                                     value={formData.password} 
                                     onChange={onChange} 
-                                    className="block w-full px-3 py-2 pr-10 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500" 
+                                    className="w-full px-4 py-3.5 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-gray-900 dark:text-white font-medium placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 focus:border-green-500 focus:bg-white dark:focus:bg-slate-900 transition-all shadow-sm pr-11" 
+                                    placeholder="Min 8 characters"
                                 />
                                 <button
                                     type="button"
                                     onClick={() => setShowPassword(!showPassword)}
-                                    className="absolute inset-y-0 right-0 pr-3 flex items-center"
+                                    className="absolute inset-y-0 right-0 pr-4 flex items-center justify-center text-gray-400 dark:text-gray-500 hover:text-green-600 dark:hover:text-green-400 transition-colors"
                                 >
-                                    {showPassword ? <FaEyeSlash className="h-4 w-4 text-gray-400" /> : <FaEye className="h-4 w-4 text-gray-400" />}
+                                    {showPassword ? <FaEyeSlash size={18} /> : <FaEye size={18} />}
                                 </button>
                             </div>
                         </div>
 
                         <div>
-                            <label className="block text-sm font-medium text-gray-700">Confirm Password</label>
+                            <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 ml-1">Confirm Password</label>
                             <input 
                                 name="confirmPassword" 
                                 type="password" 
                                 required 
                                 value={formData.confirmPassword} 
                                 onChange={onChange} 
-                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500" 
+                                className="w-full px-4 py-3.5 bg-gray-50 dark:bg-slate-800 border border-gray-200 dark:border-slate-700 rounded-xl text-gray-900 dark:text-white font-medium placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500/20 focus:border-green-500 focus:bg-white dark:focus:bg-slate-900 transition-all shadow-sm" 
+                                placeholder="Retype password"
                             />
                         </div>
 
                         <button
                             type="submit"
                             disabled={isLoading}
-                            className="w-full py-2 px-4 bg-green-600 text-white rounded-md hover:bg-green-700 disabled:opacity-50"
+                            className="w-full py-4 px-8 bg-green-600 hover:bg-green-700 text-white text-lg font-bold rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                         >
                             {isLoading ? 'Creating Account...' : 'Create Company Account'}
                         </button>
                     </form>
 
-                    <div className="mt-6 text-center">
-                        <span className="text-sm text-gray-600">
+                    <div className="mt-8 text-center space-y-2">
+                        <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
                             Already have an account?{' '}
-                            <Link to="/login" className="font-medium text-green-600 hover:text-green-500">Sign in</Link>
-                        </span>
-                        <br />
-                        <span className="text-sm text-gray-600">
+                            <Link to="/login" className="font-bold text-green-600 dark:text-green-400 hover:underline hover:text-green-500 transition-colors">Sign in</Link>
+                        </p>
+                        <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
                             Looking for a job?{' '}
-                            <Link to="/register/jobseeker" className="font-medium text-green-600 hover:text-green-500">Register as Job Seeker</Link>
-                        </span>
+                            <Link to="/register/jobseeker" className="font-bold text-green-600 dark:text-green-400 hover:underline hover:text-green-500 transition-colors">Register as Job Seeker</Link>
+                        </p>
                     </div>
                 </div>
             </div>

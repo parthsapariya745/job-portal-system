@@ -51,40 +51,37 @@ const Home = () => {
   };
 
   const labels = {
-    heroTitle_1: { en: "Find Your", hi: "अपना", gu: "તમારી" },
-    heroTitle_2: { en: "Dream Job", hi: "सपनों की नौकरी", gu: "સપનાની નોકરી" },
-    heroTitle_3: { en: "Today", hi: "पाएं आज ही", gu: "મેળવો આજે જ" },
+    heroTitle_1: { en: "Find Your", hi: "अपना" },
+    heroTitle_2: { en: "Dream Job", hi: "सपनों की नौकरी" },
+    heroTitle_3: { en: "Today", hi: "पाएं आज ही" },
     heroSub: { 
       en: "Connect with top companies and discover opportunities that match your skills. Join thousands of professionals.", 
-      hi: "शीर्ष कंपनियों से जुड़ें और अपने कौशल से मेल खाने वाले अवसरों की खोज करें। हजारों पेशेवरों में शामिल हों।",
-      gu: "ટોચની કંપનીઓ સાથે જોડાઓ અને તમારી કુશળતાને અનુરૂપ તકો શોધો. હજારો વ્યાવસાયિકો સાથે જોડાઓ."
+      hi: "शीर्ष कंपनियों से जुड़ें और अपने कौशल से मेल खाने वाले अवसरों की खोज करें। हजारों पेशेवरों में शामिल हों।"
     },
-    findJobs: { en: "Find Jobs", hi: "नौकरी खोजें", gu: "નોકરી શોધો" },
-    hireTalent: { en: "Hire Talent", hi: "हायर करें", gu: "સ્ટાફ શોધો" },
-    dashboard: { en: "Go to Dashboard", hi: "डैशबोर्ड पर जाएं", gu: "ડેશબોર્ડ" },
-    statsJobs: { en: "Active Jobs", hi: "सक्रिय नौकरियां", gu: "સક્રિય નોકરીઓ" },
-    statsCos: { en: "Companies", hi: "कंपनियां", gu: "કંપનીઓ" },
-    statsUsers: { en: "Job Seekers", hi: "नौकरी चाहने वाले", gu: "ઉમેદવારો" },
-    statsSuccess: { en: "Success Rate", hi: "सफलता दर", gu: "સફળતા દર" },
-    gujaratCtaTitle: { en: "GUJARAT SPECIAL HELP", hi: "गुजरात विशेष सहायता", gu: "ગુજરાત વિશેષ સહાય" },
+    findJobs: { en: "Find Jobs", hi: "नौकरी खोजें" },
+    hireTalent: { en: "Hire Talent", hi: "हायर करें" },
+    dashboard: { en: "Go to Dashboard", hi: "डैशबोर्ड पर जाएं" },
+    statsJobs: { en: "Active Jobs", hi: "सक्रिय नौकरियां" },
+    statsCos: { en: "Companies", hi: "कंपनियां" },
+    statsUsers: { en: "Job Seekers", hi: "नौकरी चाहने वाले" },
+    statsSuccess: { en: "Success Rate", hi: "सफलता दर" },
+    gujaratCtaTitle: { en: "GUJARAT SPECIAL HELP", hi: "गुजरात विशेष सहायता" },
     gujaratCtaSub: { 
       en: "Special NGO jobs and support for those in need in Rajkot, Ahmedabad, and Surat.", 
-      hi: "राजकोट, अहमदाबाद और सूरत में जरूरतमंदों के लिए विशेष एनजीओ नौकरियां और सहायता।",
-      gu: "રાજકોટ, અમદાવાદ અને સુરતમાં જરૂરિયાતમંદ લોકો માટે ખાસ NGO જોબ્સ અને સહાય."
+      hi: "राजकोट, अहमदाबाद और सूरत में जरूरतमंदों के लिए विशेष एनजीओ नौकरियां और सहायता।"
     },
-    getHelp: { en: "GET HELP", hi: "मदद पाएं", gu: "મદદ મેળવો" },
-    motiveTitle: { en: "Who is this Portal For?", hi: "यह पोर्टल किसके लिए है?", gu: "આ પોર્ટલ કોના માટે છે?" },
+    getHelp: { en: "GET HELP", hi: "मदद पाएं" },
+    motiveTitle: { en: "Who is this Portal For?", hi: "यह पोर्टल किसके लिए है?" },
     motiveSub: { 
       en: "Our simple motive: To help educated individuals find great corporate jobs instantly by uploading their resume, and to support non-educated individuals in finding daily reliable work and essential help.",
-      hi: "हमारा सरल उद्देश्य: शिक्षित व्यक्तियों को रेज़्यूमे अपलोड कर तुरंत अच्छी नौकरी खोजने में मदद करना, और अशिक्षित/मजदूर वर्ग को दैनिक काम और आवश्यक सहायता खोजने में समर्थन देना।",
-      gu: "અમારો સરળ ઉદ્દેશ્ય: શિક્ષિત વ્યક્તિઓને રેઝ્યૂમે અપલોડ કરી તરત જ સારી નોકરી શોધવામાં મદદ કરવી, અને અશિક્ષિત/મજૂર વર્ગને દૈનિક કામ અને જરૂરી મદદ શોધવામાં ટેકો આપવો."
+      hi: "हमारा सरल उद्देश्य: शिक्षित व्यक्तियों को रेज़्यूमे अपलोड कर तुरंत अच्छी नौकरी खोजने में मदद करना, और अशिक्षित/मजदूर वर्ग को दैनिक काम और आवश्यक सहायता खोजने में समर्थन देना।"
     },
-    educatedTitle: { en: "For Educated Seekers", hi: "शिक्षित उम्मीदवारों के लिए", gu: "શિક્ષિત ઉમેદવારો માટે" },
-    educatedDesc: { en: "Upload your resume and let our system automatically match you with the best professional jobs and companies.", hi: "अपना रेज़्यूमे अपलोड करें और हमारे सिस्टम को आपको सर्वश्रेष्ठ पेशेवर नौकरियों और कंपनियों से मिलाने दें।", gu: "તમારો રેઝ્યૂમે અપલોડ કરો અને અમારી સિસ્ટમને તમને શ્રેષ્ઠ વ્યવસાયિક નોકરીઓ અને કંપનીઓ સાથે જોડવા દો." },
-    educatedBtn: { en: "Upload Resume & Apply", hi: "रेज़्यूमे अपलोड करें", gu: "રેઝ્યૂમે અપલોડ કરો" },
-    nonEducatedTitle: { en: "For Non-Educated Seekers", hi: "अशिक्षित / श्रमिक वर्ग के लिए", gu: "અશિક્ષિત / મજૂર વર્ગ માટે" },
-    nonEducatedDesc: { en: "No degree? Connect directly with daily wage work, physical labor opportunities, and get special help from NGOs.", hi: "कोई डिग्री नहीं? सीधे दैनिक वेतन कार्य, शारीरिक श्रम के अवसरों से जुड़ें, और गैर सरकारी संगठनों से विशेष मदद प्राप्त करें।", gu: "કોઈ ડિગ્રી નથી? દૈનિક વેતન કાર્ય, મજૂરીની તકો સાથે સીધા જ જોડાઓ અને એનજીઓ (NGO) તરફથી ખાસ મદદ મેળવો." },
-    nonEducatedBtn: { en: "Find Work & Help", hi: "काम और मदद खोजें", gu: "કામ અને મદદ શોધો" }
+    educatedTitle: { en: "For Educated Seekers", hi: "शिक्षित उम्मीदवारों के लिए" },
+    educatedDesc: { en: "Upload your resume and let our system automatically match you with the best professional jobs and companies.", hi: "अपना रेज़्यूमे अपलोड करें और हमारे सिस्टम को आपको सर्वश्रेष्ठ पेशेवर नौकरियों और कंपनियों से मिलाने दें।" },
+    educatedBtn: { en: "Upload Resume & Apply", hi: "रेज़्यूमे अपलोड करें" },
+    nonEducatedTitle: { en: "For Non-Educated Seekers", hi: "अशिक्षित / श्रमिक वर्ग के लिए" },
+    nonEducatedDesc: { en: "No degree? Connect directly with daily wage work, physical labor opportunities, and get special help from NGOs.", hi: "कोई डिग्री नहीं? सीधे दैनिक वेतन कार्य, शारीरिक श्रम के अवसरों से जुड़ें, और गैर सरकारी संगठनों से विशेष मदद प्राप्त करें।" },
+    nonEducatedBtn: { en: "Find Work & Help", hi: "काम और मदद खोजें" }
   };
 
   const t = (key) => labels[key]?.[language] || labels[key]?.['en'];
@@ -329,7 +326,7 @@ const Home = () => {
                 Gujarat Exclusive 📍
               </span>
               <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
-                {language === 'gu' ? 'ગુજરાત વિશેષ સહાય' : language === 'hi' ? 'ગુજરાત विशेष सहायता' : 'GUJARAT SPECIAL HELP'}
+                {t('gujaratCtaTitle')}
               </h2>
               <p className="text-xl md:text-2xl font-medium mb-10 text-blue-100 max-w-2xl leading-relaxed">
                 {t('gujaratCtaSub')}
