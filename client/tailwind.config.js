@@ -12,7 +12,7 @@ export default {
         secondary: '#475569',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'Noto Sans Gujarati', 'Noto Sans Devanagari', 'sans-serif'],
       },
       screens: {
         'xs': '280px', // Extra small screens

@@ -19,100 +19,130 @@ const RequestHelp = () => {
   const translations = {
     pageTitle: {
       en: 'Request Help',
-      hi: 'मदद के लिए अनुरोध करें'
+      hi: 'मदद के लिए अनुरोध करें',
+      gu: 'મદદ માટે વિનંતી કરો'
     },
     pageSubtitle: {
       en: 'Fill out the form below and our team will assist you',
-      hi: 'नीचे दिया गया फॉर्म भरें और हमारी टीम आपकी सहायता करेगी'
+      hi: 'नीचे दिया गया फॉर्म भरें और हमारी टीम आपकी सहायता करेगी',
+      gu: 'નીચે આપેલ ફોર્મ ભરો અને અમારી ટીમ તમને મદદ કરશે'
     },
     backToSupport: {
       en: 'Back to Support Programs',
-      hi: 'सहायता कार्यक्रमों पर वापस जाएं'
+      hi: 'सहायता कार्यक्रमों पर वापस जाएं',
+      gu: 'સપોર્ટ પ્રોગ્રામ્સ પર પાછા જાઓ'
     },
     formTitle: {
       en: 'Help Request Form',
-      hi: 'सहायता अनुरोध फॉर्म'
+      hi: 'सहायता अनुरोध फॉर्म',
+      gu: 'મદદ વિનંતી ફોર્મ'
     },
     allFieldsRequired: {
       en: 'All fields are required',
-      hi: 'सभी फ़ील्ड आवश्यक हैं'
+      hi: 'सभी फ़ील्ड आवश्यक हैं',
+      gu: 'બધા ક્ષેત્રો જરૂરી છે'
     },
     fullName: {
       en: 'Full Name',
-      hi: 'पूरा नाम'
+      hi: 'पूरा नाम',
+      gu: 'પૂરું નામ'
     },
     age: {
       en: 'Age',
-      hi: 'उम्र'
+      hi: 'उम्र',
+      gu: 'ઉંમર'
     },
     category: {
       en: 'Category of Help Needed',
-      hi: 'आवश्यक सहायता की श्रेणी'
+      hi: 'आवश्यक सहायता की श्रेणी',
+      gu: 'જરૂરી મદદની શ્રેણી'
     },
     selectCategory: {
       en: 'Select a category',
-      hi: 'श्रेणी चुनें'
+      hi: 'श्रेणी चुनें',
+      gu: 'શ્રેણી પસંદ કરો'
     },
     location: {
       en: 'Your Location',
-      hi: 'आपका स्थान'
+      hi: 'आपका स्थान',
+      gu: 'તમારું સ્થાન'
     },
     contactNumber: {
       en: 'Contact Number',
-      hi: 'संपर्क नंबर'
+      hi: 'संपर्क नंबर',
+      gu: 'સંપર્ક નંબર'
     },
     describeNeed: {
       en: 'Describe Your Need',
-      hi: 'अपनी जरूरत का वर्णन करें'
+      hi: 'अपनी जरूरत का वर्णन करें',
+      gu: 'તમારી જરૂરિયાતનું વર્ણન કરો'
     },
     submitRequest: {
       en: 'Submit Request',
-      hi: 'अनुरोध जमा करें'
+      hi: 'अनुरोध जमा करें',
+      gu: 'વિનંતી સબમિટ કરો'
     },
     submitting: {
       en: 'Submitting...',
-      hi: 'जमा किया जा रहा है...'
+      hi: 'जमा किया जा रहा है...',
+      gu: 'સબમિટ થઈ રહ્યું છે...'
     },
     whatHappensNext: {
       en: 'What Happens Next?',
-      hi: 'आगे क्या होगा?'
+      hi: 'आगे क्या होगा?',
+      gu: 'આગળ શું થશે?'
     },
     step1: {
       en: 'Our team will review your request within 24-48 hours',
-      hi: 'हमारी टीम 24-48 घंटों के भीतर आपके अनुरोध की समीक्षा करेगी'
+      hi: 'हमारी टीम 24-48 घंटों के भीतर आपके अनुरोध की समीक्षा करेगी',
+      gu: 'અમારી ટીમ 24-48 કલાકની અંદર તમારી વિનંતીની સમીક્ષા કરશે'
     },
     step2: {
       en: 'We will contact you on your provided phone number',
-      hi: 'हम आपके दिए गए फोन नंबर पर आपसे संपर्क करेंगे'
+      hi: 'हम आपके दिए गए फोन नंबर पर आपसे संपर्क करेंगे',
+      gu: 'અમે તમારા આપેલા ફોન નંબર પર તમારો સંપર્ક કરીશું'
     },
     step3: {
       en: 'We will connect you with the right support program',
-      hi: 'हम आपको सही सहायता कार्यक्रम से जोड़ेंगे'
+      hi: 'हम आपको सही सहायता कार्यक्रम से जोड़ेंगे',
+      gu: 'અમે તમને યોગ્ય સપોર્ટ પ્રોગ્રામ સાથે જોડીશું'
     },
     privacyProtected: {
       en: 'Privacy Protected',
-      hi: 'गोपनीयता सुरक्षित'
+      hi: 'गोपनीयता सुरक्षित',
+      gu: 'ગોપનીયતા સુરક્ષિત'
     },
     privacyText: {
       en: 'Your information is secure and will only be shared with relevant support organizations.',
-      hi: 'आपकी जानकारी सुरक्षित है और इसे केवल प्रासंगिक सहायता संगठनों के साथ साझा किया जाएगा।'
+      hi: 'आपकी जानकारी सुरक्षित है और इसे केवल प्रासंगिक सहायता संगठनों के साथ साझा किया जाएगा।',
+      gu: 'તમારી માહિતી સુરક્ષિત છે અને તે ફક્ત સંબંધિત સપોર્ટ સંસ્થાઓ સાથે શેર કરવામાં આવશે.'
     },
     emergencyHelplines: {
       en: 'Emergency Helplines',
-      hi: 'आपातकालीन हेल्पलाइन'
+      hi: 'आपातकालीन हेल्पलाइन',
+      gu: 'ઇમરજન્સી હેલ્પલાઇન્સ'
     },
     childline: {
       en: 'Childline India',
-      hi: 'चाइल्डलाइन इंडिया'
+      hi: 'चाइल्डलाइन इंडिया',
+      gu: 'ચાઈલ્ડલાઈન ઈન્ડિયા'
     },
     womenHelpline: {
       en: 'Women Helpline',
-      hi: 'महिला हेल्पलाइन'
+      hi: 'महिला हेल्पलाइन',
+      gu: 'મહિલા હેલ્પલાઈન'
     },
     seniorCitizen: {
       en: 'Senior Citizen',
-      hi: 'वरिष्ठ नागरिक'
-    }
+      hi: 'वरिष्ठ नागरिक',
+      gu: 'વરિષ્ઠ નાગરિક'
+    },
+    phName: { en: 'Enter your full name', hi: 'अपना पूरा नाम दर्ज करें', gu: 'તમારું પૂરું નામ દાખલ કરો' },
+    phAge: { en: 'Your age', hi: 'आपकी उम्र', gu: 'તમારી ઉંમર' },
+    phPhone: { en: '10-digit phone number', hi: '10 अंकों का फोन नंबर', gu: '10-અંકનો ફોન નંબર' },
+    phCategory: { en: 'e.g., Health, Education, Employment...', hi: 'जैसे: स्वास्थ्य, शिक्षा, रोजगार...', gu: 'દા.ત., આરોગ્ય, શિક્ષણ, રોજગાર...' },
+    phLocation: { en: 'City, State, or Village name', hi: 'शहर, राज्य या गांव का नाम', gu: 'શહેર, રાજ્ય અથવા ગામનું નામ' },
+    phDesc: { en: 'Please describe what kind of help you are looking for...', hi: 'कृपया वर्णन करें कि आप किस तरह की मदद चाहते हैं...', gu: 'કૃપા કરીને વર્ણન કરો કે તમે કયા પ્રકારની મદદ શોધી રહ્યા છો...' }
   };
 
   const [formData, setFormData] = useState({
@@ -236,7 +266,7 @@ const RequestHelp = () => {
                     className={`w-full px-5 py-4 rounded-xl border-2 ${
                       formErrors.name ? 'border-red-500' : 'border-gray-200 dark:border-slate-700'
                     } bg-gray-50 dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all`}
-                    placeholder={language === 'hi' ? 'अपना पूरा नाम दर्ज करें' : 'Enter your full name'}
+                    placeholder={translations.phName[language]}
                   />
                   {formErrors.name && (
                     <p className="text-red-500 text-xs font-bold mt-2 uppercase tracking-tight italic">{formErrors.name}</p>
@@ -260,7 +290,7 @@ const RequestHelp = () => {
                       className={`w-full px-5 py-4 rounded-xl border-2 ${
                         formErrors.age ? 'border-red-500' : 'border-gray-200 dark:border-slate-700'
                       } bg-gray-50 dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all`}
-                      placeholder={language === 'hi' ? 'आपकी उम्र' : 'Your age'}
+                      placeholder={translations.phAge[language]}
                     />
                     {formErrors.age && (
                       <p className="text-red-500 text-xs font-bold mt-2 uppercase tracking-tight italic">{formErrors.age}</p>
@@ -279,7 +309,7 @@ const RequestHelp = () => {
                       className={`w-full px-5 py-4 rounded-xl border-2 ${
                         formErrors.contactNumber ? 'border-red-500' : 'border-gray-200 dark:border-slate-700'
                       } bg-gray-50 dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all`}
-                      placeholder={language === 'hi' ? '10 अंकों का फोन नंबर' : '10-digit phone number'}
+                      placeholder={translations.phPhone[language]}
                     />
                     {formErrors.contactNumber && (
                       <p className="text-red-500 text-xs font-bold mt-2 uppercase tracking-tight italic">{formErrors.contactNumber}</p>
@@ -300,7 +330,7 @@ const RequestHelp = () => {
                     className={`w-full px-5 py-4 rounded-xl border-2 ${
                       formErrors.category ? 'border-red-500' : 'border-gray-200 dark:border-slate-700'
                     } bg-gray-50 dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all`}
-                    placeholder={language === 'hi' ? 'जैसे: स्वास्थ्य, शिक्षा, रोजगार...' : 'e.g., Health, Education, Employment...'}
+                    placeholder={translations.phCategory[language]}
                   />
                   {formErrors.category && (
                     <p className="text-red-500 text-xs font-bold mt-2 uppercase tracking-tight italic">{formErrors.category}</p>
@@ -321,7 +351,7 @@ const RequestHelp = () => {
                     className={`w-full px-5 py-4 rounded-xl border-2 ${
                       formErrors.location ? 'border-red-500' : 'border-gray-200 dark:border-slate-700'
                     } bg-gray-50 dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all`}
-                    placeholder={language === 'hi' ? 'शहर, राज्य या गांव का नाम' : 'City, State, or Village name'}
+                    placeholder={translations.phLocation[language]}
                   />
                   {formErrors.location && (
                     <p className="text-red-500 text-xs font-bold mt-2 uppercase tracking-tight italic">{formErrors.location}</p>
@@ -342,7 +372,7 @@ const RequestHelp = () => {
                     className={`w-full px-5 py-4 rounded-xl border-2 ${
                       formErrors.description ? 'border-red-500' : 'border-gray-200 dark:border-slate-700'
                     } bg-gray-50 dark:bg-slate-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-green-500 focus:border-transparent resize-none outline-none transition-all`}
-                    placeholder={language === 'hi' ? 'कृपया वर्णन करें कि आप किस तरह की मदद चाहते हैं...' : 'Please describe what kind of help you are looking for...'}
+                    placeholder={translations.phDesc[language]}
                   />
                   {formErrors.description && (
                     <p className="text-red-500 text-xs font-bold mt-2 uppercase tracking-tight italic">{formErrors.description}</p>

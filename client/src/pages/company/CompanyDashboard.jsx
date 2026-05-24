@@ -135,8 +135,8 @@ const CompanyDashboard = ({ role = "Company" }) => {
         </div>
 
         {/* High-Fidelity Stats Bar */}
-        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-3xl rounded-[60px] p-10 border-2 border-white dark:border-slate-800 shadow-2xl dark:shadow-none mb-16 transition-colors group">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-3xl rounded-[40px] sm:rounded-[60px] p-6 sm:p-10 border-2 border-white dark:border-slate-800 shadow-2xl dark:shadow-none mb-16 transition-colors group">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
             {[
               { label: "Active Jobs", value: stats.activeJobs, icon: FaBriefcase, color: "blue", trend: "+2 this week" },
               { label: "Applications", value: stats.totalApplications, icon: FaUsers, color: "green", trend: "12 new candidates" },
@@ -170,7 +170,7 @@ const CompanyDashboard = ({ role = "Company" }) => {
           {/* Main Stage */}
           <div className="lg:col-span-2 space-y-12">
             {/* Mission Control / Quick Actions */}
-            <div className="bg-white/50 dark:bg-slate-900/50 backdrop-blur-2xl rounded-[60px] p-10 md:p-12 border-2 border-white dark:border-slate-800 transition-all hover:bg-white/70 dark:hover:bg-slate-900/70 relative overflow-hidden group">
+            <div className="bg-white/50 dark:bg-slate-900/50 backdrop-blur-2xl rounded-[40px] sm:rounded-[60px] p-6 md:p-12 border-2 border-white dark:border-slate-800 transition-all hover:bg-white/70 dark:hover:bg-slate-900/70 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl -mr-20 -mt-20 group-hover:bg-indigo-500/10 transition-colors duration-1000"></div>
               
               <div className="flex items-center gap-4 mb-10">
@@ -206,11 +206,11 @@ const CompanyDashboard = ({ role = "Company" }) => {
             </div>
 
             {/* Premium Recent Applicants */}
-            <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-3xl rounded-[60px] p-12 border-2 border-white dark:border-slate-800 shadow-2xl transition-all relative overflow-hidden group">
+            <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-3xl rounded-[40px] sm:rounded-[60px] p-6 sm:p-12 border-2 border-white dark:border-slate-800 shadow-2xl transition-all relative overflow-hidden group">
                <div className="absolute top-0 left-0 w-80 h-80 bg-green-500/5 rounded-full blur-3xl -ml-32 -mt-32 pointer-events-none group-hover:bg-green-500/10 transition-colors duration-1000"></div>
               
-              <div className="flex justify-between items-center mb-10 relative z-10">
-                <h2 className="text-3xl font-black text-slate-900 dark:text-white transition-colors tracking-tighter uppercase italic">
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-10 relative z-10">
+                <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white transition-colors tracking-tighter uppercase italic">
                   Candidate Pipeline
                 </h2>
                 <Link
@@ -245,7 +245,7 @@ const CompanyDashboard = ({ role = "Company" }) => {
                   {recentApplications.map((application) => (
                     <div
                       key={application._id}
-                      className="flex items-center justify-between p-7 bg-white/50 dark:bg-slate-800/30 border-2 border-slate-50 dark:border-slate-700 rounded-[40px] hover:border-indigo-400 dark:hover:border-indigo-500 hover:shadow-2xl transition-all duration-500 group/row"
+                      className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-6 sm:p-7 bg-white/50 dark:bg-slate-800/30 border-2 border-slate-50 dark:border-slate-700 rounded-[30px] sm:rounded-[40px] hover:border-indigo-400 dark:hover:border-indigo-500 hover:shadow-2xl transition-all duration-500 group/row gap-4 sm:gap-0"
                     >
                       <div className="flex items-center">
                         <div className="w-16 h-16 bg-slate-900 dark:bg-white rounded-[25px] flex items-center justify-center transition-all shadow-xl group-hover/row:-translate-x-2 group-hover/row:-rotate-6">
@@ -268,7 +268,7 @@ const CompanyDashboard = ({ role = "Company" }) => {
                           </div>
                         </div>
                       </div>
-                      <div className="flex items-center gap-6">
+                      <div className="flex items-center gap-4 sm:gap-6 w-full sm:w-auto justify-between sm:justify-end">
                         <span
                           className={`px-5 py-2 text-[10px] font-black uppercase tracking-[0.2em] rounded-full border-2 transition-all ${
                             application.status === "accepted" || application.status === "hired"
@@ -294,7 +294,7 @@ const CompanyDashboard = ({ role = "Company" }) => {
           {/* Side Control Panel */}
           <div className="space-y-12">
             {/* Status Radar */}
-            <div className="bg-slate-900 dark:bg-slate-950 rounded-[50px] p-10 border-b-[16px] border-slate-800 shadow-2xl relative overflow-hidden group/side">
+            <div className="bg-slate-900 dark:bg-slate-950 rounded-[40px] sm:rounded-[50px] p-6 sm:p-10 border-b-[16px] border-slate-800 shadow-2xl relative overflow-hidden group/side">
               <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl -mr-16 -mt-16 group-hover/side:bg-indigo-500/20 transition-colors duration-1000"></div>
               
               <h3 className="text-2xl font-black text-white mb-2 uppercase italic tracking-tighter relative z-10 flex items-center gap-4">
@@ -340,7 +340,7 @@ const CompanyDashboard = ({ role = "Company" }) => {
             </div>
 
             {/* Profile Health HUD */}
-            <div className="bg-indigo-700 rounded-[50px] p-10 text-white shadow-2xl relative overflow-hidden group/hud">
+            <div className="bg-indigo-700 rounded-[40px] sm:rounded-[50px] p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden group/hud">
               <div className="absolute top-0 right-0 w-full h-full bg-linear-to-br from-indigo-500/50 to-transparent pointer-events-none"></div>
               <h3 className="text-2xl font-black mb-8 uppercase italic tracking-tighter relative z-10">
                 Corporate Identity
@@ -368,7 +368,7 @@ const CompanyDashboard = ({ role = "Company" }) => {
             </div>
 
             {/* Premium Upsell HUD */}
-            <div className="bg-linear-to-br from-slate-900 to-indigo-950 rounded-[50px] p-10 text-white relative overflow-hidden group/premium border-t-8 border-indigo-500/30">
+            <div className="bg-linear-to-br from-slate-900 to-indigo-950 rounded-[40px] sm:rounded-[50px] p-6 sm:p-10 text-white relative overflow-hidden group/premium border-t-8 border-indigo-500/30">
                <div className="absolute top-0 right-0 w-48 h-48 bg-indigo-500/20 rounded-full blur-3xl -mr-16 -mt-16 animate-pulse"></div>
               <h3 className="text-2xl font-black mb-4 uppercase italic tracking-tighter relative z-10">Ascend to Elite</h3>
               <p className="text-sm font-bold text-slate-300 mb-10 leading-relaxed italic relative z-10 opacity-70">

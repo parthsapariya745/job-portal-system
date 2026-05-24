@@ -126,7 +126,7 @@ const Home = () => {
                 <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
                 Reimagined Job Search Experience
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-slate-900 dark:text-white mb-8 tracking-tight leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-black text-slate-900 dark:text-white mb-6 sm:mb-8 tracking-tight leading-[1.1]">
               <span className="inline-block">{t('heroTitle_1')}</span> <span className="text-gradient inline-block">{t('heroTitle_2')}</span>
               <br />
               <span className="inline-block">{t('heroTitle_3')}</span>
@@ -145,14 +145,14 @@ const Home = () => {
               <>
                 <Link
                   to="/jobs/search"
-                  className="inline-flex items-center justify-center px-10 py-5 border border-transparent text-xl font-bold rounded-2xl text-white bg-blue-600 hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/25 active:scale-95"
+                  className="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 border border-transparent text-lg sm:text-xl font-bold rounded-2xl text-white bg-blue-600 hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/25 active:scale-95"
                 >
                   <FaSearch className="mr-3" />
                   {t('findJobs')}
                 </Link>
                 <Link
                   to="/dashboard"
-                  className="inline-flex items-center justify-center px-10 py-5 border-2 border-slate-200 dark:border-slate-700 text-xl font-bold rounded-2xl text-slate-800 dark:text-white bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 transition-all shadow-md active:scale-95 group"
+                  className="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 border-2 border-slate-200 dark:border-slate-700 text-lg sm:text-xl font-bold rounded-2xl text-slate-800 dark:text-white bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 transition-all shadow-md active:scale-95 group"
                 >
                   {t('dashboard')}
                   <FaArrowRight className="ml-3 text-blue-600 group-hover:translate-x-1 transition-transform" />
@@ -162,14 +162,14 @@ const Home = () => {
               <>
                 <Link
                   to="/register/jobseeker"
-                  className="inline-flex items-center justify-center px-10 py-5 border border-transparent text-xl font-bold rounded-2xl text-white bg-blue-600 hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/25 active:scale-95"
+                  className="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 border border-transparent text-lg sm:text-xl font-bold rounded-2xl text-white bg-blue-600 hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/25 active:scale-95"
                 >
                   <FaRocket className="mr-3" />
                   {t('findJobs')}
                 </Link>
                 <Link
                   to="/register/company"
-                  className="inline-flex items-center justify-center px-10 py-5 border-2 border-slate-200 dark:border-slate-700 text-xl font-bold rounded-2xl text-slate-800 dark:text-white bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 transition-all shadow-md active:scale-95 group"
+                  className="inline-flex items-center justify-center px-6 py-4 sm:px-10 sm:py-5 border-2 border-slate-200 dark:border-slate-700 text-lg sm:text-xl font-bold rounded-2xl text-slate-800 dark:text-white bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 hover:border-slate-300 dark:hover:border-slate-600 transition-all shadow-md active:scale-95 group"
                 >
                   {t('hireTalent')}
                   <FaArrowRight className="ml-3 text-blue-600 group-hover:translate-x-1 transition-transform" />
@@ -184,8 +184,8 @@ const Home = () => {
       {/* Stats Section */}
       <section className="py-16 relative z-20 -mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="glass-card p-10 font-noto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-slate-200 dark:divide-slate-800">
+          <div className="glass-card p-6 sm:p-10 font-noto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 divide-x divide-slate-200 dark:divide-slate-800">
               {stats.map((stat, index) => (
                 <motion.div 
                     initial={{ opacity: 0, y: 20 }}
@@ -229,7 +229,7 @@ const Home = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-white dark:bg-slate-900 rounded-[40px] p-10 md:p-14 border border-slate-100 dark:border-slate-800 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_50px_rgba(37,99,235,0.1)] transition-all duration-300 group"
+              className="bg-white dark:bg-slate-900 rounded-[30px] sm:rounded-[40px] p-6 sm:p-10 md:p-14 border border-slate-100 dark:border-slate-800 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_50px_rgba(37,99,235,0.1)] transition-all duration-300 group"
             >
               <div className="w-20 h-20 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center text-4xl mb-8 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all">
                 <FaUserGraduate />
@@ -271,7 +271,7 @@ const Home = () => {
                initial={{ opacity: 0, x: 30 }}
                whileInView={{ opacity: 1, x: 0 }}
                viewport={{ once: true }}
-              className="bg-white dark:bg-slate-900 rounded-[40px] p-10 md:p-14 border border-slate-100 dark:border-slate-800 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_50px_rgba(249,115,22,0.1)] transition-all duration-300 group"
+              className="bg-white dark:bg-slate-900 rounded-[30px] sm:rounded-[40px] p-6 sm:p-10 md:p-14 border border-slate-100 dark:border-slate-800 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.2)] hover:shadow-[0_20px_50px_rgba(249,115,22,0.1)] transition-all duration-300 group"
             >
               <div className="w-20 h-20 bg-orange-50 dark:bg-orange-900/30 text-orange-500 dark:text-orange-400 rounded-2xl flex items-center justify-center text-4xl mb-8 group-hover:scale-110 group-hover:bg-orange-500 group-hover:text-white transition-all">
                 <FaHandsHelping />
@@ -318,7 +318,7 @@ const Home = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-blue-700 via-indigo-800 to-blue-900 rounded-[40px] p-10 md:p-16 shadow-[0_30px_60px_-15px_rgba(30,58,138,0.4)] flex flex-col md:flex-row items-center gap-12 relative overflow-hidden"
+            className="bg-gradient-to-br from-blue-700 via-indigo-800 to-blue-900 rounded-[30px] sm:rounded-[40px] p-6 sm:p-10 md:p-16 shadow-[0_30px_60px_-15px_rgba(30,58,138,0.4)] flex flex-col md:flex-row items-center gap-8 md:gap-12 relative overflow-hidden"
           >
             {/* Decors */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
@@ -362,10 +362,10 @@ const Home = () => {
       <footer className="bg-white dark:bg-slate-950 text-slate-500 dark:text-slate-400 py-20 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <img src="/job-logo.png" alt="JobPortal Logo" className="h-24 sm:h-32 w-auto object-contain mx-auto mb-8" />
-          <p className="text-lg font-medium mb-10 max-w-md mx-auto leading-relaxed transition-colors">
+          <p className="text-sm sm:text-lg font-medium mb-10 max-w-md mx-auto leading-relaxed transition-colors px-4">
             Connecting talented individuals with world-class opportunities across India.
           </p>
-          <div className="flex justify-center gap-8 mb-12">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mb-12 px-4">
             {['About', 'Jobs', 'Privacy', 'Contact'].map((item) => (
               <a key={item} href="#" className="text-sm font-black uppercase tracking-widest hover:text-blue-600 dark:hover:text-blue-400 transition-colors transition-colors">
                 {item}

@@ -85,7 +85,7 @@ const PostJob = () => {
           </p>
         </div>
 
-        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-3xl rounded-[60px] p-8 md:p-14 border-2 border-white dark:border-slate-800 shadow-2xl transition-all relative group overflow-hidden">
+        <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-3xl rounded-[40px] sm:rounded-[60px] p-6 sm:p-8 md:p-14 border-2 border-white dark:border-slate-800 shadow-2xl transition-all relative group overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-indigo-500/10 transition-colors duration-1000"></div>
           
           <form onSubmit={handleSubmit} className="space-y-12">
@@ -159,14 +159,14 @@ const PostJob = () => {
               <div className="space-y-4">
                 <label className="block text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-[0.3em] ml-2">Compensation Range</label>
                 <div className="flex flex-col gap-4">
-                  <div className="flex gap-4 items-center">
+                  <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
                     <div className="relative flex-1 group/input">
                        <div className="absolute inset-y-0 left-0 pl-6 flex items-center pointer-events-none text-green-500 transition-transform group-focus-within/input:scale-110">
                         <FaDollarSign />
                       </div>
                       <input type="number" name="salaryMin" value={formData.salaryMin} onChange={handleChange} className="w-full pl-14 pr-4 py-5 bg-slate-50 dark:bg-slate-800/50 border-2 border-transparent focus:border-indigo-500 rounded-[25px] text-slate-900 dark:text-white font-bold transition-all outline-none shadow-inner" placeholder="Min" min="0" />
                     </div>
-                    <span className="text-slate-300 font-black">—</span>
+                    <span className="hidden sm:inline text-slate-300 font-black">—</span>
                     <div className="relative flex-1 group/input">
                         <div className="absolute inset-y-0 left-0 pl-6 flex items-center pointer-events-none text-green-500 transition-transform group-focus-within/input:scale-110">
                         <FaDollarSign />
@@ -174,12 +174,12 @@ const PostJob = () => {
                       <input type="number" name="salaryMax" value={formData.salaryMax} onChange={handleChange} className="w-full pl-14 pr-4 py-5 bg-slate-50 dark:bg-slate-800/50 border-2 border-transparent focus:border-indigo-500 rounded-[25px] text-slate-900 dark:text-white font-bold transition-all outline-none shadow-inner" placeholder="Max" min="0" />
                     </div>
                   </div>
-                   <div className="flex gap-4">
-                     <select name="salaryType" value={formData.salaryType} onChange={handleChange} className="px-6 py-5 bg-slate-50 dark:bg-slate-800/50 border-2 border-transparent focus:border-indigo-500 rounded-[25px] text-slate-900 dark:text-white font-bold transition-all outline-none shadow-inner">
+                   <div className="flex flex-col sm:flex-row gap-4">
+                     <select name="salaryType" value={formData.salaryType} onChange={handleChange} className="w-full sm:w-auto px-6 py-5 bg-slate-50 dark:bg-slate-800/50 border-2 border-transparent focus:border-indigo-500 rounded-[25px] text-slate-900 dark:text-white font-bold transition-all outline-none shadow-inner">
                        <option value="Per Year">Per Year</option>
                        <option value="Per Month">Per Month</option>
                      </select>
-                     <label className="flex items-center gap-4 group cursor-pointer">
+                     <label className="flex items-center gap-4 group cursor-pointer w-full sm:w-auto">
                         <div className="relative">
                           <input type="checkbox" name="salaryNegotiable" checked={formData.salaryNegotiable} onChange={handleChange} className="sr-only" />
                           <div className={`w-14 h-8 rounded-full transition-colors duration-300 flex items-center px-1 ${formData.salaryNegotiable ? 'bg-indigo-600' : 'bg-slate-200 dark:bg-slate-800'}`}>

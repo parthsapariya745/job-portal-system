@@ -34,7 +34,7 @@ const FindJobs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div className="mb-8">
                 <h1 className="text-3xl font-bold text-gray-900 mb-4">Find Your Next Job</h1>
-                <form onSubmit={handleSearch} className="flex gap-4 max-w-2xl">
+                <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-2xl">
                     <input 
                         type="text" 
                         placeholder="Search by job title or keyword..." 
@@ -42,7 +42,7 @@ const FindJobs = () => {
                         onChange={(e) => setKeyword(e.target.value)}
                         className="flex-1 rounded-md border-0 py-3 pl-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                     />
-                    <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 font-medium">
+                    <button type="submit" className="w-full sm:w-auto bg-blue-600 text-white px-6 py-3 sm:py-2 rounded-md hover:bg-blue-700 font-medium">
                         Search
                     </button>
                 </form>
@@ -57,17 +57,17 @@ const FindJobs = () => {
                     {Array.isArray(jobs) && jobs.length > 0 ? (
                         jobs.map((job) => (
                             <div key={job._id} className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition">
-                                <div className="flex justify-between items-start">
+                                <div className="flex flex-col sm:flex-row justify-between items-start gap-4 sm:gap-0">
                                     <div>
                                         <h3 className="text-xl font-semibold text-blue-600">{job.title}</h3>
                                         <p className="text-gray-900 font-medium mt-1">{job.company?.name || job.companyName || 'Company'}</p>
-                                        <p className="text-gray-500 text-sm flex gap-4 mt-2">
-                                            <span>📍 {job.location || 'N/A'}</span>
-                                            <span>💼 {job.type || 'N/A'}</span>
-                                            <span>💰 {job.salary?.min && job.salary?.max ? `${job.salary.min.toLocaleString()} - ${job.salary.max.toLocaleString()}${job.salary.salaryType === 'Per Month' ? ' / month' : ' LPA'}` : typeof job.salary === 'object' ? 'Not disclosed' : job.salary || 'Not disclosed'}</span>
+                                        <p className="text-gray-500 text-sm flex flex-wrap gap-2 sm:gap-4 mt-2">
+                                            <span className="bg-gray-100 px-2 py-1 rounded">📍 {job.location || 'N/A'}</span>
+                                            <span className="bg-gray-100 px-2 py-1 rounded">💼 {job.type || 'N/A'}</span>
+                                            <span className="bg-gray-100 px-2 py-1 rounded">💰 {job.salary?.min && job.salary?.max ? `${job.salary.min.toLocaleString()} - ${job.salary.max.toLocaleString()}${job.salary.salaryType === 'Per Month' ? ' / month' : ' LPA'}` : typeof job.salary === 'object' ? 'Not disclosed' : job.salary || 'Not disclosed'}</span>
                                         </p>
                                     </div>
-                                    <Link to={`/jobs/${job._id}`} className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm font-medium">
+                                    <Link to={`/jobs/${job._id}`} className="w-full sm:w-auto text-center px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 text-sm font-medium">
                                         View Details
                                     </Link>
                                 </div>

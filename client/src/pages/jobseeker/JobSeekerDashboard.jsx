@@ -78,7 +78,7 @@ const JobSeekerDashboard = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 font-sans transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Header */}
-        <div className="mb-10 text-center bg-gradient-to-r from-blue-600 to-indigo-600 rounded-[40px] p-10 shadow-xl dark:shadow-indigo-900/20 text-white relative overflow-hidden transition-all">
+        <div className="mb-10 text-center bg-gradient-to-r from-blue-600 to-indigo-600 rounded-[30px] sm:rounded-[40px] p-6 sm:p-10 shadow-xl dark:shadow-indigo-900/20 text-white relative overflow-hidden transition-all">
           <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"></div>
           <div className="relative z-10">
             {loading ? (
@@ -182,7 +182,7 @@ const JobSeekerDashboard = () => {
           {/* Main Layout Content */}
           <div className="lg:col-span-2 space-y-10">
             {/* Recommended Jobs */}
-            <div className="bg-white dark:bg-slate-900 rounded-[40px] shadow-xl dark:shadow-none border-4 border-indigo-50 dark:border-slate-800 p-8 transition-colors">
+            <div className="bg-white dark:bg-slate-900 rounded-[30px] sm:rounded-[40px] shadow-xl dark:shadow-none border-4 border-indigo-50 dark:border-slate-800 p-6 sm:p-8 transition-colors">
               <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-black text-gray-900 dark:text-white flex items-center transition-colors">
                   <span className="bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 p-2 rounded-xl mr-3 transition-colors">
@@ -253,7 +253,7 @@ const JobSeekerDashboard = () => {
           {/* Sidebar */}
           <div className="space-y-8">
             {/* Profile Completion */}
-            <div className="bg-white dark:bg-slate-900 rounded-[32px] shadow-xl dark:shadow-none border-4 border-blue-50 dark:border-slate-800 p-8 relative overflow-hidden transition-colors">
+            <div className="bg-white dark:bg-slate-900 rounded-[30px] sm:rounded-[32px] shadow-xl dark:shadow-none border-4 border-blue-50 dark:border-slate-800 p-6 sm:p-8 relative overflow-hidden transition-colors">
               <div className="absolute top-0 right-0 w-24 h-24 bg-blue-100 dark:bg-blue-950 rounded-full mix-blend-multiply opacity-50 translate-x-10 -translate-y-10 filter blur-xl transition-colors"></div>
 
               <h3 className="text-xl font-black text-gray-900 dark:text-white mb-6 flex items-center transition-colors">
@@ -297,7 +297,7 @@ const JobSeekerDashboard = () => {
             </div>
 
             {/* Job Alerts */}
-            <div className="bg-white dark:bg-slate-900 rounded-[32px] shadow-xl dark:shadow-none border-4 border-pink-50 dark:border-slate-800 p-8 transition-colors">
+            <div className="bg-white dark:bg-slate-900 rounded-[30px] sm:rounded-[32px] shadow-xl dark:shadow-none border-4 border-pink-50 dark:border-slate-800 p-6 sm:p-8 transition-colors">
               <h3 className="text-xl font-black text-gray-900 dark:text-white mb-4 flex items-center transition-colors">
                 <span className="bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 p-2 rounded-lg mr-3 transition-colors">
                   🔔
@@ -317,7 +317,7 @@ const JobSeekerDashboard = () => {
             </div>
 
             {/* Career Tips */}
-            <div className="bg-gradient-to-b from-purple-50 to-white dark:from-slate-800 dark:to-slate-900 rounded-[32px] shadow-xl dark:shadow-none border-4 border-purple-100 dark:border-slate-800 p-8 transition-colors">
+            <div className="bg-gradient-to-b from-purple-50 to-white dark:from-slate-800 dark:to-slate-900 rounded-[30px] sm:rounded-[32px] shadow-xl dark:shadow-none border-4 border-purple-100 dark:border-slate-800 p-6 sm:p-8 transition-colors">
               <h3 className="text-xl font-black text-gray-900 dark:text-white mb-6 flex items-center transition-colors">
                 <span className="bg-purple-200 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 p-2 rounded-lg mr-3 transition-colors">
                   💡
